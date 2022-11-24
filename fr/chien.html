@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIs0pen: false}  ">
+ <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=, initial-scale=1.0">
+      <title>Menu Chats et chiens </title>
+      <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+ </head>
+
+ <header>
+   <h1> Menu Chats et Chiens </h1>
+   
+     <a>
+       <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais"> 
+     </a>
+      <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="header__menuBtn"> <a>  <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger"></a> </button>
+      <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.700ms class="menu">   
+     <a> 
+       <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
+       <img src="/public/img/Icons/croix.svg" alt="croix">
+    </a> 
+         <h4> Les chiens</h4>
+       <ul>
+              <li> 
+                 <a href="chat.html"> Les chats </a> 
+              </li> 
+              <li>
+                 <a href="chien.html"> Les chiens </a> 
+              </li>
+
+              <li>
+                 <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="#">Blue Flag - Kaito </a>
+             </li> 
+              
+              <li> 
+                <img src="/public/img/Icons/film.svg" alt="film"> <a href="#">Le Voyage de Chihiro - Hayao Miyazaki </a>
+              </li>
+
+              <li>
+                 <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="#">Filmographie Miyazaki </a>
+              </li>
+              <li> 
+                <img src="/public/img/Icons/world.svg" alt="world"> <a href="#">Une crainte/regret pour ma génération </a>
+              </li>
+
+              <li> 
+                <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="#">Un espoir pour ma génération </a>
+              </li>
+       </ul> 
+   </nav>
+ </header>
+  <body>
+    <h1> Les chiens</h1>
+    <img src="img/chien/chien-1.jpg" alt="le chien">
+    <img src="img/chien/chien-2.jpg" alt="le  deuxième chien">
+ </body>
+
+</html>
